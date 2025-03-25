@@ -1,0 +1,47 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+}
+
+.fila {
+    display: flex;
+    gap: 10px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.contenedor2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor2 div {
+    width: 100%;
+}
+
+.tituloproducto {
+    color: white;
+}
+
+.tituloproducto+p {
+    color: white;
+}
+
+.tituloproducto+p+p {
+    color: white;
+}
+
+
+.productoCaja {
+    background-color: #047ac2;
+
+}
+
+.tituloproducto~button {
+    background-color: #8dba03;
+    color: white;
+    font-size: large;
+}
