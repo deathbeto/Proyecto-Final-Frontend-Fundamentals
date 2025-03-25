@@ -1,27 +1,3 @@
-.contenedor {
-    display: flex;
-    flex-direction: column;
-}
-
-.fila {
-    display: flex;
-    gap: 10px;
-}
-
-img {
-    width: 100%;
-    height: auto;
-}
-
-.contenedor2 {
-    display: flex;
-    flex-direction: column;
-}
-
-.contenedor2 div {
-    width: 100%;
-}
-
 .tituloproducto {
     color: white;
 }
