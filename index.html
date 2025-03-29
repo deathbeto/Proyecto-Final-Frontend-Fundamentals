@@ -10,92 +10,148 @@
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;500;700&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 
 </head>
 
-<body>
+<body class="text-center">
     <header>
         <h1>Tienda de <span style="color: #037BC0;">Muebles</span></h1>
-        <nav>
-            <ul>
-                <li><a href="#"></a>Inicio</li>
-                <li><a href="#"></a>Nosotros</li>
-                <li><a href="#"></a>Tienda</li>
-                <li><a href="#"></a>Blog</li>
-                <li><a href="#"></a>Galería</li>
-                <li><a href="#"></a>Contacto</li>
-            </ul>
+
+        <!-- Navbar con botón desplegable en móviles -->
+        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+            <div class="container-fluid">
+                <!-- Botón para desplegar el menú en dispositivos pequeños -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Contenido del menú -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+
     </header>
-    <div class="hero">
-        <img src="/principal.jpg" alt="" class="img-fluid">
+
+    <div class="container mt-4">
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/principal.jpg" alt="Los Angeles" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="/categoria1.jpg" alt="Chicago" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="/categoria2.jpg" alt="New York" class="d-block w-100">
+                </div>
+            </div>
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
     </div>
+
     <h2>Nuestros Productos</h2>
 
     <div class="container-fluid"> <!-- Div contenedor-->
 
-        <div class="row align-items-center"> <!-- Fila 1-->
+        <div class="row align-items-center productoCaja"> <!-- Fila 1-->
             <div class="col-md-6">
                 <img src="producto1.jpg" alt="" class="img-fluid">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 d-flex flex-column justify-content-center text-white">
                 <div class="productoCaja">
                     <h3 class="tituloproducto">Producto 1</h3>
                     <p>Lorem ipsum dolor sit amet...</p>
                     <p>12,000.00</p>
-                    <button>Agregar al carrito</button>
+                    <button class="btn btn-success">Agregar al carrito</button>
                 </div>
             </div>
         </div> <!-- Fila 1-->
 
         <div class="row"> <!-- Fila 2-->
-            <div class="col-md-6">
+            <div class="col-md-6 d-flex flex-column justify-content-center text-white">
                 <div class="productoCaja">
                     <img src="producto2.jpg" alt="" class="img-fluid">
                     <h3 class="tituloproducto">Producto 2</h3>
                     <p>Lorem ipsum dolor sit amet...</p>
                     <p>12,000.00</p>
-                    <button>Agregar al carrito</button>
+                    <button class="btn btn-success">Agregar al carrito</button>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 d-flex flex-column justify-content-center text-white">
                 <div class="productoCaja">
                     <img src="producto3.jpg" alt="" class="img-fluid">
                     <h3 class="tituloproducto">Producto 3</h3>
                     <p>Lorem ipsum dolor sit amet...</p>
                     <p>12,000.00</p>
-                    <button>Agregar al carrito</button>
+                    <button class="btn btn-success">Agregar al carrito</button>
                 </div>
             </div>
         </div> <!-- Fila 2-->
 
 
         <div class="row"> <!-- Fila 3-->
-            <div class="col-md-4">
+            <div class="col-md-4 d-flex flex-column justify-content-center text-white">
                 <div class="productoCaja">
                     <img src="producto4.jpg" alt="" class="img-fluid">
                     <h3 class="tituloproducto">Producto 4</h3>
                     <p>Lorem ipsum dolor sit amet...</p>
                     <p>12,000.00</p>
-                    <button>Agregar al carrito</button>
+                    <button class="btn btn-success">Agregar al carrito</button>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 d-flex flex-column justify-content-center text-white">
                 <div class="productoCaja">
                     <img src="producto5.jpg" alt="" class="img-fluid">
                     <h3 class="tituloproducto">Producto 5</h3>
                     <p>Lorem ipsum dolor sit amet...</p>
                     <p>12,000.00</p>
-                    <button>Agregar al carrito</button>
+                    <button class="btn btn-success">Agregar al carrito</button>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 d-flex flex-column justify-content-center text-white">
                 <div class="productoCaja">
                     <img src="producto6.jpg" alt="" class="img-fluid">
                     <h3 class="tituloproducto">Producto 6</h3>
                     <p>Lorem ipsum dolor sit amet...</p>
                     <p>12,000.00</p>
-                    <button>Agregar al carrito</button>
+                    <button class="btn btn-success">Agregar al carrito</button>
                 </div>
             </div>
         </div> <!-- Fila 3-->
@@ -103,21 +159,23 @@
     </div> <!-- Div contenedor-->
 
 
-    <h3>Nuestros Productos</h3>
-    <div class="container-fluid"> <!-- Div Nuestros productos-->
+    <h2 class="text-center">Categorias de Productos</h2>
+    <div class="container-fluid"> <!-- Div categorias de Productos-->
 
         <div class="row">
             <div class="col-md-4">
-                <img src="/categoria1.jpg" alt="" class="img-fluid">
-                <p>Oficina</p>
+                <div class="overflow-hidden"><img src="/categoria1.jpg" alt="" class="img-fluid img-hover"></div>
+                <p class="text-center"><a href="#" class="text-decoration-none">Oficina</a></p>
             </div>
             <div class="col-md-4">
-                <img src="/categoria2.jpg" alt="" class="img-fluid">
-                <p>Hogar</p>
+                <div class="overflow-hidden"><img src="/categoria2.jpg" alt="" class="img-fluid img-hover"></div>
+                <p class="text-center"><a href="#" class="text-decoration-none">Hogar</a></p>
             </div>
             <div class="col-md-4">
-                <img src="/categoria3.jpg" alt="" class="img-fluid">
-                <p>Cocina</p>
+                <div class="overflow-hidden"><img src="/categoria3.jpg" alt="" class="img-fluid img-hover"></div>
+                <p class="text-center">
+                    <a href="#" class="text-decoration-none">Cocina</a>
+                </p>
             </div>
         </div>
 
@@ -128,8 +186,8 @@
         <div class="row">
             <div class="col-md-4">
                 <div>
-                    <h4>Categorias</h4>
-                    <ul>
+                    <h3>Categorias</h3>
+                    <ul class="list-unstyled">
                         <li>Cocina</li>
                         <li>Oficina</li>
                         <li>Jardin</li>
@@ -139,30 +197,34 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 container-xl">
                 <div>
-                    <h4>Sobre Nosotros</h4>
-                    <li>Nuestra Historia</li>
-                    <li>Misión, Visión, Valores</li>
-                    <li>Comentarios</li>
-                    <li>Politica de privacidad</li>
-                    <li>Terminos de servicio</li>
+                    <h3>Sobre Nosotros</h3>
+                    <ul class="list-unstyled">
+                        <li>Nuestra Historia</li>
+                        <li>Misión, Visión, Valores</li>
+                        <li>Comentarios</li>
+                        <li>Politica de privacidad</li>
+                        <li>Terminos de servicio</li>
+                    </ul>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div>
-                    <h4>Soporte</h4>
-                    <li>Preguntas frecuentes</li>
-                    <li>Ayuda en línea</li>
-                    <li>Confianza y seguridad</li>
+                    <h3>Soporte</h3>
+                    <ul class="list-unstyled">
+                        <li>Preguntas frecuentes</li>
+                        <li>Ayuda en línea</li>
+                        <li>Confianza y seguridad</li>
+                    </ul>
                 </div>
             </div>
-
-
         </div>
     </div> <!-- Parte Final-->
-
+    <footer>
+        Todos los derechos reservados. TiendaMuebles
+    </footer>
 
 </body>
 

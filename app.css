@@ -1,3 +1,27 @@
+html {}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+h1,
+h2,
+h3,
+{
+font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2,
+h3 {
+    font-size: 4rem;
+}
+
 .tituloproducto {
     color: white;
 }
@@ -21,3 +45,24 @@
     font-size: large;
 }
 
+.carousel-inner img {
+    height: 25rem;
+    /* Tamaño predeterminado */
+    object-fit: cover;
+    /* Asegura que la imagen se ajuste sin deformarse */
+}
+
+@media (max-width: 768px) {
+    .carousel-inner img {
+        height: 55rem;
+        /* Aumenta el tamaño en dispositivos más pequeños */
+    }
+}
+
+.img-hover {
+    transition: transform 0.3s ease-in-out;
+}
+
+.img-hover:hover {
+    transform: scale(1.2);
+}
