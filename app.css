@@ -44,16 +44,12 @@ h3 {
 
 .carousel-inner img {
     height: 25rem;
-    /* Tamaño predeterminado */
     object-fit: cover;
-    /* Asegura que la imagen se ajuste sin deformarse */
 }
 
 @media (max-width: 768px) {
     .carousel-inner img {
-        height: 55rem;
-        /* Aumenta el tamaño en dispositivos más pequeños */
-    }
+        height: 55rem;    }
 }
 
 .img-hover {
